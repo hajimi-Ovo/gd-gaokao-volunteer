@@ -1,0 +1,116 @@
+[
+  {"id":"s_pku_101_2022","university_id":"pku","group_code":"101","group_name":"专业组101","year":2022,"preferred_subject":"physics","min_score":683,"min_rank":142,"avg_score":690,"enrollment_count":28},
+  {"id":"s_pku_101_2023","university_id":"pku","group_code":"101","group_name":"专业组101","year":2023,"preferred_subject":"physics","min_score":694,"min_rank":78,"avg_score":700,"enrollment_count":28},
+  {"id":"s_pku_101_2024","university_id":"pku","group_code":"101","group_name":"专业组101","year":2024,"preferred_subject":"physics","min_score":689,"min_rank":96,"avg_score":696,"enrollment_count":30},
+  {"id":"s_pku_101_2025","university_id":"pku","group_code":"101","group_name":"专业组101","year":2025,"preferred_subject":"physics","min_score":691,"min_rank":85,"avg_score":698,"enrollment_count":30},
+
+  {"id":"s_tsinghua_201_2022","university_id":"tsinghua","group_code":"201","group_name":"专业组201","year":2022,"preferred_subject":"physics","min_score":684,"min_rank":128,"avg_score":691,"enrollment_count":45},
+  {"id":"s_tsinghua_201_2023","university_id":"tsinghua","group_code":"201","group_name":"专业组201","year":2023,"preferred_subject":"physics","min_score":695,"min_rank":65,"avg_score":701,"enrollment_count":45},
+  {"id":"s_tsinghua_201_2024","university_id":"tsinghua","group_code":"201","group_name":"专业组201","year":2024,"preferred_subject":"physics","min_score":690,"min_rank":82,"avg_score":697,"enrollment_count":48},
+  {"id":"s_tsinghua_201_2025","university_id":"tsinghua","group_code":"201","group_name":"专业组201","year":2025,"preferred_subject":"physics","min_score":692,"min_rank":72,"avg_score":699,"enrollment_count":48},
+
+  {"id":"s_sysu_201_2022","university_id":"sysu","group_code":"201","group_name":"专业组201（物理+不限）","year":2022,"preferred_subject":"physics","min_score":614,"min_rank":13200,"avg_score":622,"enrollment_count":1500},
+  {"id":"s_sysu_201_2023","university_id":"sysu","group_code":"201","group_name":"专业组201（物理+不限）","year":2023,"preferred_subject":"physics","min_score":635,"min_rank":8500,"avg_score":643,"enrollment_count":1520},
+  {"id":"s_sysu_201_2024","university_id":"sysu","group_code":"201","group_name":"专业组201（物理+不限）","year":2024,"preferred_subject":"physics","min_score":626,"min_rank":10200,"avg_score":635,"enrollment_count":1550},
+  {"id":"s_sysu_201_2025","university_id":"sysu","group_code":"201","group_name":"专业组201（物理+不限）","year":2025,"preferred_subject":"physics","min_score":630,"min_rank":9500,"avg_score":639,"enrollment_count":1550},
+
+  {"id":"s_sysu_202_2022","university_id":"sysu","group_code":"202","group_name":"专业组202（物理+化学）","year":2022,"preferred_subject":"physics","min_score":619,"min_rank":11100,"avg_score":628,"enrollment_count":800},
+  {"id":"s_sysu_202_2023","university_id":"sysu","group_code":"202","group_name":"专业组202（物理+化学）","year":2023,"preferred_subject":"physics","min_score":640,"min_rank":7200,"avg_score":648,"enrollment_count":820},
+  {"id":"s_sysu_202_2024","university_id":"sysu","group_code":"202","group_name":"专业组202（物理+化学）","year":2024,"preferred_subject":"physics","min_score":631,"min_rank":8800,"avg_score":641,"enrollment_count":830},
+  {"id":"s_sysu_202_2025","university_id":"sysu","group_code":"202","group_name":"专业组202（物理+化学）","year":2025,"preferred_subject":"physics","min_score":635,"min_rank":8100,"avg_score":644,"enrollment_count":830},
+
+  {"id":"s_scut_201_2022","university_id":"scut","group_code":"201","group_name":"专业组201（物理+不限）","year":2022,"preferred_subject":"physics","min_score":613,"min_rank":14300,"avg_score":620,"enrollment_count":1800},
+  {"id":"s_scut_201_2023","university_id":"scut","group_code":"201","group_name":"专业组201（物理+不限）","year":2023,"preferred_subject":"physics","min_score":632,"min_rank":9800,"avg_score":639,"enrollment_count":1850},
+  {"id":"s_scut_201_2024","university_id":"scut","group_code":"201","group_name":"专业组201（物理+不限）","year":2024,"preferred_subject":"physics","min_score":624,"min_rank":11800,"avg_score":632,"enrollment_count":1900},
+  {"id":"s_scut_201_2025","university_id":"scut","group_code":"201","group_name":"专业组201（物理+不限）","year":2025,"preferred_subject":"physics","min_score":628,"min_rank":10800,"avg_score":636,"enrollment_count":1900},
+
+  {"id":"s_jnu_201_2022","university_id":"jnu","group_code":"201","group_name":"专业组201（物理+不限）","year":2022,"preferred_subject":"physics","min_score":594,"min_rank":26500,"avg_score":604,"enrollment_count":1600},
+  {"id":"s_jnu_201_2023","university_id":"jnu","group_code":"201","group_name":"专业组201（物理+不限）","year":2023,"preferred_subject":"physics","min_score":608,"min_rank":21800,"avg_score":618,"enrollment_count":1650},
+  {"id":"s_jnu_201_2024","university_id":"jnu","group_code":"201","group_name":"专业组201（物理+不限）","year":2024,"preferred_subject":"physics","min_score":601,"min_rank":24000,"avg_score":611,"enrollment_count":1680},
+  {"id":"s_jnu_201_2025","university_id":"jnu","group_code":"201","group_name":"专业组201（物理+不限）","year":2025,"preferred_subject":"physics","min_score":604,"min_rank":22800,"avg_score":614,"enrollment_count":1680},
+
+  {"id":"s_scnu_201_2022","university_id":"scnu","group_code":"201","group_name":"专业组201（物理+不限）","year":2022,"preferred_subject":"physics","min_score":583,"min_rank":36500,"avg_score":592,"enrollment_count":2000},
+  {"id":"s_scnu_201_2023","university_id":"scnu","group_code":"201","group_name":"专业组201（物理+不限）","year":2023,"preferred_subject":"physics","min_score":596,"min_rank":31000,"avg_score":605,"enrollment_count":2050},
+  {"id":"s_scnu_201_2024","university_id":"scnu","group_code":"201","group_name":"专业组201（物理+不限）","year":2024,"preferred_subject":"physics","min_score":590,"min_rank":33500,"avg_score":599,"enrollment_count":2100},
+  {"id":"s_scnu_201_2025","university_id":"scnu","group_code":"201","group_name":"专业组201（物理+不限）","year":2025,"preferred_subject":"physics","min_score":593,"min_rank":32200,"avg_score":602,"enrollment_count":2100},
+
+  {"id":"s_sustech_201_2022","university_id":"sustech","group_code":"201","group_name":"专业组201（物理+不限）","year":2022,"preferred_subject":"physics","min_score":636,"min_rank":5200,"avg_score":645,"enrollment_count":50},
+  {"id":"s_sustech_201_2023","university_id":"sustech","group_code":"201","group_name":"专业组201（物理+不限）","year":2023,"preferred_subject":"physics","min_score":657,"min_rank":3100,"avg_score":665,"enrollment_count":55},
+  {"id":"s_sustech_201_2024","university_id":"sustech","group_code":"201","group_name":"专业组201（物理+不限）","year":2024,"preferred_subject":"physics","min_score":649,"min_rank":4200,"avg_score":658,"enrollment_count":58},
+  {"id":"s_sustech_201_2025","university_id":"sustech","group_code":"201","group_name":"专业组201（物理+不限）","year":2025,"preferred_subject":"physics","min_score":652,"min_rank":3800,"avg_score":660,"enrollment_count":60},
+
+  {"id":"s_szu_201_2022","university_id":"szu","group_code":"201","group_name":"专业组201（物理+不限）","year":2022,"preferred_subject":"physics","min_score":572,"min_rank":48000,"avg_score":582,"enrollment_count":2800},
+  {"id":"s_szu_201_2023","university_id":"szu","group_code":"201","group_name":"专业组201（物理+不限）","year":2023,"preferred_subject":"physics","min_score":586,"min_rank":41200,"avg_score":596,"enrollment_count":2900},
+  {"id":"s_szu_201_2024","university_id":"szu","group_code":"201","group_name":"专业组201（物理+不限）","year":2024,"preferred_subject":"physics","min_score":579,"min_rank":45200,"avg_score":589,"enrollment_count":2950},
+  {"id":"s_szu_201_2025","university_id":"szu","group_code":"201","group_name":"专业组201（物理+不限）","year":2025,"preferred_subject":"physics","min_score":582,"min_rank":43800,"avg_score":592,"enrollment_count":3000},
+
+  {"id":"s_gdut_201_2022","university_id":"gdut","group_code":"201","group_name":"专业组201（物理+不限）","year":2022,"preferred_subject":"physics","min_score":548,"min_rank":75000,"avg_score":558,"enrollment_count":4500},
+  {"id":"s_gdut_201_2023","university_id":"gdut","group_code":"201","group_name":"专业组201（物理+不限）","year":2023,"preferred_subject":"physics","min_score":558,"min_rank":68000,"avg_score":568,"enrollment_count":4600},
+  {"id":"s_gdut_201_2024","university_id":"gdut","group_code":"201","group_name":"专业组201（物理+不限）","year":2024,"preferred_subject":"physics","min_score":553,"min_rank":72000,"avg_score":563,"enrollment_count":4700},
+  {"id":"s_gdut_201_2025","university_id":"gdut","group_code":"201","group_name":"专业组201（物理+不限）","year":2025,"preferred_subject":"physics","min_score":555,"min_rank":70500,"avg_score":565,"enrollment_count":4800},
+
+  {"id":"s_gzhmu_201_2022","university_id":"gzhmu","group_code":"201","group_name":"专业组201（物理+化学/生物）","year":2022,"preferred_subject":"physics","min_score":578,"min_rank":42000,"avg_score":590,"enrollment_count":800},
+  {"id":"s_gzhmu_201_2023","university_id":"gzhmu","group_code":"201","group_name":"专业组201（物理+化学/生物）","year":2023,"preferred_subject":"physics","min_score":592,"min_rank":34200,"avg_score":603,"enrollment_count":820},
+  {"id":"s_gzhmu_201_2024","university_id":"gzhmu","group_code":"201","group_name":"专业组201（物理+化学/生物）","year":2024,"preferred_subject":"physics","min_score":585,"min_rank":38500,"avg_score":597,"enrollment_count":850},
+  {"id":"s_gzhmu_201_2025","university_id":"gzhmu","group_code":"201","group_name":"专业组201（物理+化学/生物）","year":2025,"preferred_subject":"physics","min_score":588,"min_rank":36800,"avg_score":600,"enrollment_count":850},
+
+  {"id":"s_smu_201_2022","university_id":"smu","group_code":"201","group_name":"专业组201（物理+化学/生物）","year":2022,"preferred_subject":"physics","min_score":568,"min_rank":52000,"avg_score":580,"enrollment_count":1200},
+  {"id":"s_smu_201_2023","university_id":"smu","group_code":"201","group_name":"专业组201（物理+化学/生物）","year":2023,"preferred_subject":"physics","min_score":580,"min_rank":45500,"avg_score":592,"enrollment_count":1250},
+  {"id":"s_smu_201_2024","university_id":"smu","group_code":"201","group_name":"专业组201（物理+化学/生物）","year":2024,"preferred_subject":"physics","min_score":574,"min_rank":49200,"avg_score":586,"enrollment_count":1280},
+  {"id":"s_smu_201_2025","university_id":"smu","group_code":"201","group_name":"专业组201（物理+化学/生物）","year":2025,"preferred_subject":"physics","min_score":576,"min_rank":47800,"avg_score":588,"enrollment_count":1300},
+
+  {"id":"s_gdufs_201_2022","university_id":"gdufs","group_code":"201","group_name":"专业组201（物理+不限）","year":2022,"preferred_subject":"physics","min_score":553,"min_rank":70500,"avg_score":563,"enrollment_count":600},
+  {"id":"s_gdufs_201_2023","university_id":"gdufs","group_code":"201","group_name":"专业组201（物理+不限）","year":2023,"preferred_subject":"physics","min_score":564,"min_rank":63200,"avg_score":574,"enrollment_count":620},
+  {"id":"s_gdufs_201_2024","university_id":"gdufs","group_code":"201","group_name":"专业组201（物理+不限）","year":2024,"preferred_subject":"physics","min_score":559,"min_rank":66800,"avg_score":569,"enrollment_count":630},
+  {"id":"s_gdufs_201_2025","university_id":"gdufs","group_code":"201","group_name":"专业组201（物理+不限）","year":2025,"preferred_subject":"physics","min_score":561,"min_rank":65200,"avg_score":571,"enrollment_count":630},
+
+  {"id":"s_scau_201_2022","university_id":"scau","group_code":"201","group_name":"专业组201（物理+不限）","year":2022,"preferred_subject":"physics","min_score":548,"min_rank":75000,"avg_score":556,"enrollment_count":2500},
+  {"id":"s_scau_201_2023","university_id":"scau","group_code":"201","group_name":"专业组201（物理+不限）","year":2023,"preferred_subject":"physics","min_score":558,"min_rank":68000,"avg_score":566,"enrollment_count":2550},
+  {"id":"s_scau_201_2024","university_id":"scau","group_code":"201","group_name":"专业组201（物理+不限）","year":2024,"preferred_subject":"physics","min_score":553,"min_rank":72000,"avg_score":561,"enrollment_count":2600},
+  {"id":"s_scau_201_2025","university_id":"scau","group_code":"201","group_name":"专业组201（物理+不限）","year":2025,"preferred_subject":"physics","min_score":555,"min_rank":70500,"avg_score":563,"enrollment_count":2600},
+
+  {"id":"s_gzu_201_2022","university_id":"gzu","group_code":"201","group_name":"专业组201（物理+不限）","year":2022,"preferred_subject":"physics","min_score":538,"min_rank":85000,"avg_score":548,"enrollment_count":3500},
+  {"id":"s_gzu_201_2023","university_id":"gzu","group_code":"201","group_name":"专业组201（物理+不限）","year":2023,"preferred_subject":"physics","min_score":548,"min_rank":78000,"avg_score":558,"enrollment_count":3550},
+  {"id":"s_gzu_201_2024","university_id":"gzu","group_code":"201","group_name":"专业组201（物理+不限）","year":2024,"preferred_subject":"physics","min_score":543,"min_rank":82000,"avg_score":553,"enrollment_count":3600},
+  {"id":"s_gzu_201_2025","university_id":"gzu","group_code":"201","group_name":"专业组201（物理+不限）","year":2025,"preferred_subject":"physics","min_score":545,"min_rank":80200,"avg_score":555,"enrollment_count":3600},
+
+  {"id":"s_stu_201_2022","university_id":"stu","group_code":"201","group_name":"专业组201（物理+不限）","year":2022,"preferred_subject":"physics","min_score":535,"min_rank":89000,"avg_score":545,"enrollment_count":800},
+  {"id":"s_stu_201_2023","university_id":"stu","group_code":"201","group_name":"专业组201（物理+不限）","year":2023,"preferred_subject":"physics","min_score":546,"min_rank":80500,"avg_score":556,"enrollment_count":820},
+  {"id":"s_stu_201_2024","university_id":"stu","group_code":"201","group_name":"专业组201（物理+不限）","year":2024,"preferred_subject":"physics","min_score":540,"min_rank":85000,"avg_score":550,"enrollment_count":830},
+  {"id":"s_stu_201_2025","university_id":"stu","group_code":"201","group_name":"专业组201（物理+不限）","year":2025,"preferred_subject":"physics","min_score":543,"min_rank":82800,"avg_score":553,"enrollment_count":830},
+
+  {"id":"s_dgut_201_2022","university_id":"dgut","group_code":"201","group_name":"专业组201（物理+不限）","year":2022,"preferred_subject":"physics","min_score":498,"min_rank":145000,"avg_score":508,"enrollment_count":1500},
+  {"id":"s_dgut_201_2023","university_id":"dgut","group_code":"201","group_name":"专业组201（物理+不限）","year":2023,"preferred_subject":"physics","min_score":508,"min_rank":135000,"avg_score":518,"enrollment_count":1550},
+  {"id":"s_dgut_201_2024","university_id":"dgut","group_code":"201","group_name":"专业组201（物理+不限）","year":2024,"preferred_subject":"physics","min_score":503,"min_rank":141000,"avg_score":513,"enrollment_count":1580},
+  {"id":"s_dgut_201_2025","university_id":"dgut","group_code":"201","group_name":"专业组201（物理+不限）","year":2025,"preferred_subject":"physics","min_score":505,"min_rank":138500,"avg_score":515,"enrollment_count":1600},
+
+  {"id":"s_gdmu_201_2022","university_id":"gdmu","group_code":"201","group_name":"专业组201（物理+化学/生物）","year":2022,"preferred_subject":"physics","min_score":515,"min_rank":125000,"avg_score":528,"enrollment_count":1000},
+  {"id":"s_gdmu_201_2023","university_id":"gdmu","group_code":"201","group_name":"专业组201（物理+化学/生物）","year":2023,"preferred_subject":"physics","min_score":525,"min_rank":113000,"avg_score":538,"enrollment_count":1050},
+  {"id":"s_gdmu_201_2024","university_id":"gdmu","group_code":"201","group_name":"专业组201（物理+化学/生物）","year":2024,"preferred_subject":"physics","min_score":520,"min_rank":119000,"avg_score":533,"enrollment_count":1080},
+  {"id":"s_gdmu_201_2025","university_id":"gdmu","group_code":"201","group_name":"专业组201（物理+化学/生物）","year":2025,"preferred_subject":"physics","min_score":522,"min_rank":116500,"avg_score":535,"enrollment_count":1100},
+
+  {"id":"s_hust_201_2022","university_id":"hust","group_code":"201","group_name":"专业组201（物理+不限）","year":2022,"preferred_subject":"physics","min_score":630,"min_rank":6400,"avg_score":638,"enrollment_count":120},
+  {"id":"s_hust_201_2023","university_id":"hust","group_code":"201","group_name":"专业组201（物理+不限）","year":2023,"preferred_subject":"physics","min_score":650,"min_rank":4100,"avg_score":658,"enrollment_count":125},
+  {"id":"s_hust_201_2024","university_id":"hust","group_code":"201","group_name":"专业组201（物理+不限）","year":2024,"preferred_subject":"physics","min_score":642,"min_rank":5200,"avg_score":650,"enrollment_count":130},
+  {"id":"s_hust_201_2025","university_id":"hust","group_code":"201","group_name":"专业组201（物理+不限）","year":2025,"preferred_subject":"physics","min_score":645,"min_rank":4700,"avg_score":653,"enrollment_count":130},
+
+  {"id":"s_whu_201_2022","university_id":"whu","group_code":"201","group_name":"专业组201（物理+不限）","year":2022,"preferred_subject":"physics","min_score":625,"min_rank":7400,"avg_score":633,"enrollment_count":110},
+  {"id":"s_whu_201_2023","university_id":"whu","group_code":"201","group_name":"专业组201（物理+不限）","year":2023,"preferred_subject":"physics","min_score":645,"min_rank":4800,"avg_score":653,"enrollment_count":115},
+  {"id":"s_whu_201_2024","university_id":"whu","group_code":"201","group_name":"专业组201（物理+不限）","year":2024,"preferred_subject":"physics","min_score":637,"min_rank":6200,"avg_score":645,"enrollment_count":118},
+  {"id":"s_whu_201_2025","university_id":"whu","group_code":"201","group_name":"专业组201（物理+不限）","year":2025,"preferred_subject":"physics","min_score":640,"min_rank":5600,"avg_score":648,"enrollment_count":120},
+
+  {"id":"s_xmu_201_2022","university_id":"xmu","group_code":"201","group_name":"专业组201（物理+不限）","year":2022,"preferred_subject":"physics","min_score":610,"min_rank":16500,"avg_score":618,"enrollment_count":90},
+  {"id":"s_xmu_201_2023","university_id":"xmu","group_code":"201","group_name":"专业组201（物理+不限）","year":2023,"preferred_subject":"physics","min_score":627,"min_rank":10800,"avg_score":635,"enrollment_count":95},
+  {"id":"s_xmu_201_2024","university_id":"xmu","group_code":"201","group_name":"专业组201（物理+不限）","year":2024,"preferred_subject":"physics","min_score":620,"min_rank":13200,"avg_score":628,"enrollment_count":98},
+  {"id":"s_xmu_201_2025","university_id":"xmu","group_code":"201","group_name":"专业组201（物理+不限）","year":2025,"preferred_subject":"physics","min_score":623,"min_rank":12100,"avg_score":631,"enrollment_count":100},
+
+  {"id":"s_uestc_201_2022","university_id":"uestc","group_code":"201","group_name":"专业组201（物理+不限）","year":2022,"preferred_subject":"physics","min_score":606,"min_rank":18200,"avg_score":614,"enrollment_count":85},
+  {"id":"s_uestc_201_2023","university_id":"uestc","group_code":"201","group_name":"专业组201（物理+不限）","year":2023,"preferred_subject":"physics","min_score":622,"min_rank":12500,"avg_score":630,"enrollment_count":88},
+  {"id":"s_uestc_201_2024","university_id":"uestc","group_code":"201","group_name":"专业组201（物理+不限）","year":2024,"preferred_subject":"physics","min_score":615,"min_rank":15300,"avg_score":623,"enrollment_count":90},
+  {"id":"s_uestc_201_2025","university_id":"uestc","group_code":"201","group_name":"专业组201（物理+不限）","year":2025,"preferred_subject":"physics","min_score":618,"min_rank":14200,"avg_score":626,"enrollment_count":90},
+
+  {"id":"s_cqu_201_2022","university_id":"cqu","group_code":"201","group_name":"专业组201（物理+不限）","year":2022,"preferred_subject":"physics","min_score":598,"min_rank":23800,"avg_score":606,"enrollment_count":75},
+  {"id":"s_cqu_201_2023","university_id":"cqu","group_code":"201","group_name":"专业组201（物理+不限）","year":2023,"preferred_subject":"physics","min_score":613,"min_rank":18800,"avg_score":621,"enrollment_count":78},
+  {"id":"s_cqu_201_2024","university_id":"cqu","group_code":"201","group_name":"专业组201（物理+不限）","year":2024,"preferred_subject":"physics","min_score":606,"min_rank":20200,"avg_score":614,"enrollment_count":80},
+  {"id":"s_cqu_201_2025","university_id":"cqu","group_code":"201","group_name":"专业组201（物理+不限）","year":2025,"preferred_subject":"physics","min_score":609,"min_rank":19200,"avg_score":617,"enrollment_count":80}
+]

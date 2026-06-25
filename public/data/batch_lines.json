@@ -1,0 +1,29 @@
+[
+  { "year": 2022, "category": "physics", "batch_name": "特殊类型招生控制线", "batch_code": "special", "score": 538, "rank": 83300 },
+  { "year": 2022, "category": "physics", "batch_name": "本科批次录取线", "batch_code": "undergraduate", "score": 445, "rank": 234000 },
+  { "year": 2022, "category": "physics", "batch_name": "专科批次录取线", "batch_code": "vocational", "score": 180, "rank": 398000 },
+  { "year": 2022, "category": "history", "batch_name": "特殊类型招生控制线", "batch_code": "special", "score": 532, "rank": 21100 },
+  { "year": 2022, "category": "history", "batch_name": "本科批次录取线", "batch_code": "undergraduate", "score": 437, "rank": 100200 },
+  { "year": 2022, "category": "history", "batch_name": "专科批次录取线", "batch_code": "vocational", "score": 180, "rank": 270000 },
+
+  { "year": 2023, "category": "physics", "batch_name": "特殊类型招生控制线", "batch_code": "special", "score": 539, "rank": 85000 },
+  { "year": 2023, "category": "physics", "batch_name": "本科批次录取线", "batch_code": "undergraduate", "score": 439, "rank": 236000 },
+  { "year": 2023, "category": "physics", "batch_name": "专科批次录取线", "batch_code": "vocational", "score": 180, "rank": 400000 },
+  { "year": 2023, "category": "history", "batch_name": "特殊类型招生控制线", "batch_code": "special", "score": 540, "rank": 21500 },
+  { "year": 2023, "category": "history", "batch_name": "本科批次录取线", "batch_code": "undergraduate", "score": 433, "rank": 102000 },
+  { "year": 2023, "category": "history", "batch_name": "专科批次录取线", "batch_code": "vocational", "score": 180, "rank": 272000 },
+
+  { "year": 2024, "category": "physics", "batch_name": "特殊类型招生控制线", "batch_code": "special", "score": 532, "rank": 86000 },
+  { "year": 2024, "category": "physics", "batch_name": "本科批次录取线", "batch_code": "undergraduate", "score": 442, "rank": 240000 },
+  { "year": 2024, "category": "physics", "batch_name": "专科批次录取线", "batch_code": "vocational", "score": 200, "rank": 405000 },
+  { "year": 2024, "category": "history", "batch_name": "特殊类型招生控制线", "batch_code": "special", "score": 539, "rank": 20000 },
+  { "year": 2024, "category": "history", "batch_name": "本科批次录取线", "batch_code": "undergraduate", "score": 428, "rank": 105000 },
+  { "year": 2024, "category": "history", "batch_name": "专科批次录取线", "batch_code": "vocational", "score": 200, "rank": 275000 },
+
+  { "year": 2025, "category": "physics", "batch_name": "特殊类型招生控制线", "batch_code": "special", "score": 535, "rank": 84000 },
+  { "year": 2025, "category": "physics", "batch_name": "本科批次录取线", "batch_code": "undergraduate", "score": 440, "rank": 237000 },
+  { "year": 2025, "category": "physics", "batch_name": "专科批次录取线", "batch_code": "vocational", "score": 195, "rank": 402000 },
+  { "year": 2025, "category": "history", "batch_name": "特殊类型招生控制线", "batch_code": "special", "score": 538, "rank": 20800 },
+  { "year": 2025, "category": "history", "batch_name": "本科批次录取线", "batch_code": "undergraduate", "score": 430, "rank": 103000 },
+  { "year": 2025, "category": "history", "batch_name": "专科批次录取线", "batch_code": "vocational", "score": 195, "rank": 273000 }
+]
