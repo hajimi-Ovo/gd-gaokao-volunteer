@@ -140,7 +140,7 @@ export default function SchoolDetailPage() {
                 }
                 valueStyle={{
                   color:
-                    profile.rank && prediction.predictedRank > profile.rank
+                    profile.rank && prediction.predictedRank < profile.rank
                       ? '#ff4d4f'
                       : '#52c41a',
                 }}

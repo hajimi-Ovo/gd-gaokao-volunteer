@@ -179,26 +179,29 @@ export async function getRecommendations(
         ? Math.round((rankDiff / profile.rank) * 1000) / 10
         : 0
 
-    // 冲稳保分类
+    // 冲稳保分类（注意：排名数值越小 = 学校越好）
+    // rankDiffPercent < 0 → 院校排名比你好（更难考）→ 冲
+    // rankDiffPercent ≈ 0 → 排名接近 → 稳
+    // rankDiffPercent > 0 → 你排名比院校好（更好考）→ 保
     let category: 'chong' | 'wen' | 'bao'
     let probability: 'high' | 'medium' | 'low' | 'very_low'
     let probabilityLabel: string
 
-    if (rankDiffPercent > 5) {
-      // 院校录取排名远高于考生排名 → 冲
+    if (rankDiffPercent < -5) {
+      // 院校录取排名明显优于考生排名 → 冲刺
       category = 'chong'
-      probability = rankDiffPercent > 15 ? 'very_low' : 'low'
-      probabilityLabel = rankDiffPercent > 15 ? '希望较小' : '可以冲刺'
-    } else if (rankDiffPercent >= -5) {
-      // 排名接近 → 稳
+      probability = rankDiffPercent < -15 ? 'very_low' : 'low'
+      probabilityLabel = rankDiffPercent < -15 ? '希望较小' : '可以冲刺'
+    } else if (rankDiffPercent <= 5) {
+      // 排名接近 → 稳妥
       category = 'wen'
       probability = 'medium'
       probabilityLabel = '录取希望较大'
     } else {
-      // 考生排名明显高于院校 → 保
+      // 考生排名明显优于院校 → 保底
       category = 'bao'
-      probability = rankDiffPercent < -10 ? 'high' : 'medium'
-      probabilityLabel = rankDiffPercent < -10 ? '录取把握很大' : '较为稳妥'
+      probability = rankDiffPercent > 15 ? 'high' : 'medium'
+      probabilityLabel = rankDiffPercent > 15 ? '录取把握很大' : '较为稳妥'
     }
 
     // 城市偏好过滤

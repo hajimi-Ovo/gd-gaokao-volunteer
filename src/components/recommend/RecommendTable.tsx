@@ -125,7 +125,7 @@ export default function RecommendTable({ data, loading }: RecommendTableProps) {
       width: 100,
       sorter: (a, b) => a.rankDiffPercent - b.rankDiffPercent,
       render: (pct: number) => {
-        const color = pct > 5 ? '#ff4d4f' : pct < -5 ? '#52c41a' : '#faad14'
+        const color = pct < -5 ? '#ff4d4f' : pct > 5 ? '#52c41a' : '#faad14'
         const prefix = pct > 0 ? '↑' : pct < 0 ? '↓' : '→'
         return <Text style={{ color }}>{prefix} {Math.abs(pct)}%</Text>
       },
