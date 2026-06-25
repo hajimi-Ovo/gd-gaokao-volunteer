@@ -1,8 +1,9 @@
-import { Card, Button, Space, Typography, Tooltip } from 'antd'
+import { Card, Button, Space, Typography, Tooltip, Tag } from 'antd'
 import {
   DeleteOutlined,
   ArrowUpOutlined,
   ArrowDownOutlined,
+  InfoCircleOutlined,
 } from '@ant-design/icons'
 import type { VolunteerItem } from '@/types'
 import ProbabilityBadge from '@/components/recommend/ProbabilityBadge'
@@ -17,6 +18,15 @@ interface VolunteerCardProps {
   onRemove: (id: string) => void
   onMoveUp: (id: string) => void
   onMoveDown: (id: string) => void
+  onShowDetail: (item: VolunteerItem) => void
+}
+
+const levelLabel: Record<string, string> = {
+  '985': '985',
+  '211': '211',
+  double_first_class: '双一流',
+  public_undergraduate: '公办本科',
+  private_undergraduate: '民办本科',
 }
 
 export default function VolunteerCard({
@@ -27,7 +37,11 @@ export default function VolunteerCard({
   onRemove,
   onMoveUp,
   onMoveDown,
+  onShowDetail,
 }: VolunteerCardProps) {
+  const scoreDiffPrefix = item.scoreDiff > 0 ? '+' : ''
+  const scoreDiffColor = item.scoreDiff > 0 ? '#ff4d4f' : item.scoreDiff < 0 ? '#52c41a' : '#1677ff'
+
   return (
     <Card
       size="small"
@@ -59,24 +73,44 @@ export default function VolunteerCard({
           <div style={{ flex: 1 }}>
             <Space size={4} style={{ marginBottom: 4 }}>
               <ProbabilityBadge category={item.category} probabilityLabel={item.probability} />
+              {item.universityLevel && (
+                <Tag color="default" style={{ fontSize: 10 }}>
+                  {levelLabel[item.universityLevel] || item.universityLevel}
+                </Tag>
+              )}
             </Space>
-            <div>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
               <Text strong style={{ fontSize: 15 }}>
                 {item.universityName}
               </Text>
-              <Text type="secondary" style={{ marginLeft: 8 }}>
-                {item.groupName || `专业组 ${item.groupCode}`}
+              <Text type="secondary" style={{ fontSize: 12 }}>
+                {item.universityProvince} {item.universityCity}
               </Text>
             </div>
-            <div>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginTop: 2 }}>
               <Text type="secondary" style={{ fontSize: 12 }}>
-                预测排名：{item.predictedRank.toLocaleString()}
+                {item.groupName || `专业组 ${item.groupCode}`}
+              </Text>
+              <Tooltip title="预估分数与你的分数差值">
+                <Text style={{ fontSize: 12, color: scoreDiffColor }}>
+                  {scoreDiffPrefix}{item.scoreDiff}分
+                </Text>
+              </Tooltip>
+              <Text type="secondary" style={{ fontSize: 12 }}>
+                预估{item.predictedScore}分 | 排名{item.predictedRank.toLocaleString()}
               </Text>
             </div>
           </div>
         </div>
 
         <Space>
+          <Tooltip title="查看详情">
+            <Button
+              size="small"
+              icon={<InfoCircleOutlined />}
+              onClick={() => onShowDetail(item)}
+            />
+          </Tooltip>
           <Tooltip title="上移">
             <Button
               size="small"

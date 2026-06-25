@@ -13,12 +13,18 @@ export function useVolunteerList() {
         id: generateId(),
         universityId: rec.university.id,
         universityName: rec.university.name,
+        universityProvince: rec.university.province,
+        universityCity: rec.university.city,
+        universityLevel: rec.university.level,
         groupCode: rec.groupCode,
         groupName: rec.groupName,
         category: rec.category,
         order: store.plans.find((p) => p.id === store.currentPlanId)?.items.length ?? 0,
         predictedRank: rec.predictedMinRank,
+        predictedScore: rec.predictedMinScore,
+        scoreDiff: rec.scoreDiff,
         probability: rec.probabilityLabel,
+        groupMajors: rec.groupMajors,
       }
       store.addItem(item)
     },

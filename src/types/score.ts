@@ -33,11 +33,21 @@ export interface UserProfile {
   rank: number
   preferredSubject: ExamCategory
   reselectedSubjects: string[]
-  cityPreference?: string[]     // 目标城市
-  majorPreference?: string[]    // 目标专业方向
-  levelPreference?: string[]    // 院校层次偏好
-  tuitionMax?: number           // 最高可接受学费
+  provincePreference?: string[]   // 目标省份/地区偏好
+  majorPreference?: string[]      // 目标专业大类（如 ["工学", "医学"]）
+  majorSubPreference?: string[]   // 目标专业子类（如 ["计算机类", "临床医学类"]）
+  levelPreference?: string[]      // 院校层次偏好
+  tuitionMax?: number             // 最高可接受学费
 }
+
+/** 年份权重配置（用户手动调节） */
+export interface YearWeightConfig {
+  mode: 'equal' | 'auto' | 'manual'  // 等权平均 / 难度自动 / 手动调节
+  manualWeights: Record<string, number>  // 如 { "2022": 25, "2023": 25, "2024": 25, "2025": 25 }
+}
+
+/** 专业组冷热标记 */
+export type GroupHotness = 'hot' | 'normal' | 'cold'
 
 /** 推荐结果 */
 export interface RecommendationResult {
@@ -48,16 +58,25 @@ export interface RecommendationResult {
     city: string
     level: string
     type: string
+    isGuangdong: boolean         // 是否广东省内院校
   }
   groupCode: string
   groupName: string
   predictedMinRank: number      // 预测最低排名
   predictedMinScore: number     // 预测最低分数
+  scoreDiff: number              // 与考生分数的差值（正=冲，负=保）
   probability: 'high' | 'medium' | 'low' | 'very_low'
   probabilityLabel: string
   category: 'chong' | 'wen' | 'bao'
   rankDiff: number              // 用户排名与预测排名的差值
   rankDiffPercent: number       // 差值百分比
+  /** 专业组内容详情 */
+  groupMajors: string[]          // 该专业组包含的专业名称列表
+  groupHotness: GroupHotness    // 专业组冷热程度
+  bestGroupScore?: number       // 该院校最高专业组投档分
+  worstGroupScore?: number      // 该院校最低专业组投档分
+  isCostEffective?: boolean     // 省外高性价比标记
+  costEffectiveNote?: string    // 性价比说明
   majors: {
     id: string
     name: string

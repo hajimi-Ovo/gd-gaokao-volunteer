@@ -1,7 +1,9 @@
-import { useMemo } from 'react'
+import { useMemo, useState } from 'react'
 import { Typography, Collapse, Empty, Statistic, Row, Col, Tag } from 'antd'
 import { useVolunteerStore } from '@/store/volunteerStore'
 import VolunteerCard from './VolunteerCard'
+import VolunteerDetail from './VolunteerDetail'
+import type { VolunteerItem } from '@/types'
 
 const { Text } = Typography
 
@@ -10,6 +12,8 @@ export default function VolunteerBoard() {
   const currentPlanId = useVolunteerStore((s) => s.currentPlanId)
   const removeItem = useVolunteerStore((s) => s.removeItem)
   const reorderItems = useVolunteerStore((s) => s.reorderItems)
+
+  const [detailItem, setDetailItem] = useState<VolunteerItem | null>(null)
 
   const plan = plans.find((p) => p.id === currentPlanId)
 
@@ -46,6 +50,10 @@ export default function VolunteerBoard() {
     if (idx < 0 || idx >= items.length - 1) return
     ;[items[idx], items[idx + 1]] = [items[idx + 1], items[idx]]
     reorderItems(items.map((it, i) => ({ ...it, order: i })))
+  }
+
+  const handleShowDetail = (item: VolunteerItem) => {
+    setDetailItem(item)
   }
 
   if (!plan || plan.items.length === 0) {
@@ -95,6 +103,7 @@ export default function VolunteerBoard() {
                 onRemove={handleRemove}
                 onMoveUp={handleMoveUp}
                 onMoveDown={handleMoveDown}
+                onShowDetail={handleShowDetail}
               />
             )),
           },
@@ -106,7 +115,7 @@ export default function VolunteerBoard() {
   return (
     <div>
       <Row gutter={[16, 16]} style={{ marginBottom: 16 }}>
-        <Col span={8}>
+        <Col span={6}>
           <Statistic
             title="已填志愿"
             value={total}
@@ -114,20 +123,42 @@ export default function VolunteerBoard() {
             valueStyle={{ color: total >= 10 ? '#52c41a' : '#faad14' }}
           />
         </Col>
-        <Col span={8}>
-          <Statistic title="🔴 冲" value={grouped.chong.length} suffix="个" />
+        <Col span={6}>
+          <Statistic
+            title="🔴 冲"
+            value={grouped.chong.length}
+            suffix="个"
+            valueStyle={{ color: '#ff4d4f' }}
+          />
         </Col>
-        <Col span={8}>
-          <Statistic title="🟡 稳" value={grouped.wen.length} suffix="个" />
+        <Col span={6}>
+          <Statistic
+            title="🟡 稳"
+            value={grouped.wen.length}
+            suffix="个"
+            valueStyle={{ color: '#faad14' }}
+          />
         </Col>
-        <Col span={8}>
-          <Statistic title="🟢 保" value={grouped.bao.length} suffix="个" />
+        <Col span={6}>
+          <Statistic
+            title="🟢 保"
+            value={grouped.bao.length}
+            suffix="个"
+            valueStyle={{ color: '#52c41a' }}
+          />
         </Col>
       </Row>
 
       {renderCategory('chong', '🔴 冲刺', '#ff4d4f', '15-20 个')}
       {renderCategory('wen', '🟡 稳妥', '#faad14', '15-20 个')}
       {renderCategory('bao', '🟢 保底', '#52c41a', '5-10 个')}
+
+      {/* 详情弹窗 */}
+      <VolunteerDetail
+        open={!!detailItem}
+        item={detailItem}
+        onClose={() => setDetailItem(null)}
+      />
     </div>
   )
 }
